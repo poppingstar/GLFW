@@ -11,15 +11,14 @@ GLFW는 OpenGL, Vulkan등의 라이브러리와 상호작용하는 기능을 제
 Visual Studio에서 새 프로젝트 만들기>빈 프로젝트를 선택합니다. 프로젝트 이름을 원하는 대로 설정하고 만들기를 누릅니다.<br/>
 
 그런 다음 솔루션 탐색기에 우클릭>추가>새 항목을 선택합니다.<br/>
-![step1-2](https://github.com/poppingstar/GLFW/assets/71365717/481bc86f-b75d-43c3-aff7-be7164e7f5aa)<br.>
+![step1-2](https://github.com/poppingstar/GLFW/assets/71365717/481bc86f-b75d-43c3-aff7-be7164e7f5aa)<br>
 
 
 파일명과 확장자를 입력합니다. 전 파일명을 cpuboid.cpp로 하겠습니다. 파일 명은 편한대로 하셔도 되지만, 아래 예제를 실행하기 위해선 .cpp확장자로 생성해주세요.<br/> (윈도우에서 c++파일의 확장자는 cpp입니다)<br/>
-![step1-3](https://github.com/poppingstar/GLFW/assets/71365717/8027fcc8-f48b-4e61-ac33-2f74e530ffab)<br/>
+![step1-3](https://github.com/poppingstar/GLFW/assets/71365717/8027fcc8-f48b-4e61-ac33-2f74e530ffab)<br/><br/>
 
 
-
-예제 코드<br/>
+##예제 코드
 ```cpp
 #include <GLFW/glfw3.h>
 #include <GL/gl.h>
