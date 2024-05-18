@@ -11,10 +11,12 @@ GLFW는 OpenGL, Vulkan등의 라이브러리와 상호작용하는 기능을 제
 Visual Studio에서 새 프로젝트 만들기>빈 프로젝트를 선택합니다. 프로젝트 이름을 원하는 대로 설정하고 만들기를 누릅니다.<br/>
 
 그런 다음 솔루션 탐색기에 우클릭>추가>새 항목을 선택합니다.<br/>
-![1-2](../img/step1-2.png)<br/>
+![step1-2](https://github.com/poppingstar/GLFW/assets/71365717/481bc86f-b75d-43c3-aff7-be7164e7f5aa)<br.>
+
 
 파일명과 확장자를 입력합니다. 전 파일명을 cpuboid.cpp로 하겠습니다. 파일 명은 편한대로 하셔도 되지만, 아래 예제를 실행하기 위해선 .cpp확장자로 생성해주세요.<br/> (윈도우에서 c++파일의 확장자는 cpp입니다)<br/>
-![1-3](../img/step1-3.png)<br/>
+![step1-3](https://github.com/poppingstar/GLFW/assets/71365717/8027fcc8-f48b-4e61-ac33-2f74e530ffab)<br/>
+
 
 
 예제 코드<br/>
@@ -145,26 +147,32 @@ int main(void) {
 ## 프로젝트 설정
 우선 라이브러리와 헤더 파일을 프로젝트로 가져와야합니다.<br/>
 솔루션 탐색기>우클릭>파일 탐색기에서 폴더 열기를 클릭해줍니다.<br/>
-![2-1](../img/step2-1.png)<br/>
+![step2-1](https://github.com/poppingstar/GLFW/assets/71365717/18a16b4c-0841-467b-ae71-3a339ed4ffbb)<br/>
+
 
 해당 프로젝트의 루트에 dependencies폴더를 만들어주고 dependencies폴더에 glfw폴더의 include파일을 복사해줍니다.<br/>
 
 dependencies폴더에 lib 폴더를 만들고, 이 폴더에 glfw폴더의 lib-vc2022/glfw3.lib를 복사해줍니다. (만약 사용하는 Visual Studio의 버전이 2022가 아니라면, 자신의 버전에 맞는 폴더에서 복사해줍니다.)<br/>
 
 Visual Studio로 돌아와서, 프로젝트를 마우스 우클릭하고 속성을 선택합니다.<br/>
-![2-7](../img/step2-7.png)<br/>
+![step2-7](https://github.com/poppingstar/GLFW/assets/71365717/356f9c49-3e39-4e70-9da8-ccdedaee69af)<br/>
+
 
 C/C++>일반>추가 포함 디렉터리에 $(ProjectDir)\dependencies\include를 입력후 적용을 클릭합니다.<br/>
-![2-8](../img/step2-8.png)<br/>
+![step2-8](https://github.com/poppingstar/GLFW/assets/71365717/d553f094-d091-45a1-bf8a-bd5a9b1ae71e)<br/>
+
 
 링커>일반>추가 라이브러리 디렉터리에 $(ProjectDir)\dependencies\lib를 입력하고 적용을 클릭합니다.<br/>
-![2-9](../img/step2-9.png)<br/>
+![step2-9](https://github.com/poppingstar/GLFW/assets/71365717/a4ace83e-aacb-436c-8342-0bcd65070988)<br/>
+
 
 링커>입력>추가 종속성에 glfw3.lib, opengl32.lib, user32.lib, gdi32.lib, shell32.lib를 추가한뒤 적용을 클릭합니다.<br/>
-![2-10](../img/step2-10.png)<br/>
+![step2-10](https://github.com/poppingstar/GLFW/assets/71365717/03418bc4-6c7a-40b0-8648-c32ef2483769)<br/>
+
 
 설정이 끝났습니다. 코드를 실행했을 때, 아래와 같이 돌아가는 직육면체가 나오면 성공입니다.<br/>
-![end](../img/end.png)<br/>
+![end](https://github.com/poppingstar/GLFW/assets/71365717/448648ab-9f32-4da9-9290-17aa4ddc305f)<br/>
+
 
 ## 소감
 팀장  정윤걸:
