@@ -18,7 +18,7 @@ Visual Studio에서 새 프로젝트 만들기>빈 프로젝트를 선택합니�
 ![step1-3](https://github.com/poppingstar/GLFW/assets/71365717/8027fcc8-f48b-4e61-ac33-2f74e530ffab)<br/><br/>
 
 
-##예제 코드
+## 예제 코드
 ```cpp
 #include <GLFW/glfw3.h>
 #include <GL/gl.h>
