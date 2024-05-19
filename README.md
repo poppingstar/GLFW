@@ -1,3 +1,8 @@
+## 개발환경
+OS:   Wndows 11 Pro 23H2<br/>
+CPU:  13700K<br/>
+IDE:  Visual Studio 2022<br/>
+
 # GLFW를 CPP와 연동하기
 GLFW는 OpenGL, Vulkan등의 라이브러리와 상호작용하는 기능을 제공하는 라이브러리입니다..<br/>
 이 포스트에선 윈도우에서 Visual Studio를 통해 c++과 GLFW를 연동해 보겠습니다.<br/><br/>
