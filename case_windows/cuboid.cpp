@@ -108,7 +108,7 @@ int main(void) {
     glVertex3f(1.0f, 1.0f, -1.0f);
     glEnd();
 
-    angle += 0.1f;
+    angle += 0.3f;
 
     glfwSwapBuffers(window);
     glfwPollEvents();
