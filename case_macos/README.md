@@ -10,18 +10,26 @@
 > **통합개발환경 :** Xcode Version 15.3 (15E204a)
 > 
 
+
+# 실행화면
+
+
+
+![2024-05-192.32.49-ezgif.com-video-to-gif-converter.gif](MAC_GLFW/2024-05-192.32.49-ezgif.com-video-to-gif-converter.gif)
+
+
 # OpenGL 기본 설정 방법
 
----
+
 
 1. 프로젝트 설정에 들어간다
 2. Build Phases에서 Link Binary With Libraries에 Glut , OpenGl framework를 추가한다
 
-![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled.png)
+![Untitled](MAC_GLFW/Untitled.png)
 
 # Building GLFW
 
----
+
 
 1. GLFW 설치 (3.4버전을 설치함)
     
@@ -38,13 +46,13 @@
 
 # 프로젝트 생성 및 세팅
 
----
+
 
 1. **프로젝트 생성**
     
-    ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%201.png)
+    ![Untitled](MAC_GLFW/Untitled%201.png)
     
-    ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%202.png)
+    ![Untitled](MAC_GLFW/Untitled%202.png)
     
 2. **프로젝트 설정**
     1. **glfw폴더 찾기**
@@ -53,51 +61,51 @@
         brew info glfw
         ```
         
-        ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%203.png)
+        ![Untitled](MAC_GLFW/Untitled%203.png)
         
         > /usr/local/Cellar/glfw/3.4 에 위치한것을 확인할 수 있다.
         > 
     2. **library 링크**
         
-        ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%204.png)
+        ![Untitled](MAC_GLFW/Untitled%204.png)
         
-        ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%205.png)
+        ![Untitled](MAC_GLFW/Untitled%205.png)
         
     3. 추가한 화면
         
-        ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%206.png)
+        ![Untitled](MAC_GLFW/Untitled%206.png)
         
     4. 헤더파일 사용을 위해 search paths 경로에 추가
         
-        ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%207.png)
+        ![Untitled](MAC_GLFW/Untitled%207.png)
         
     5. **GLAD설정**
         1. glad 홈페이지 접속, 아래와 같이 설정
             
             [https://glad.dav1d.de](https://glad.dav1d.de/) 
             
-            ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%208.png)
+            ![Untitled](MAC_GLFW/Untitled%208.png)
             
         2. zip파일 다운로드
             
-            ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%209.png)
+            ![Untitled](MAC_GLFW/Untitled%209.png)
             
         3. zip폴더 압축해제 후 프로젝트 폴더로 이동 
             
-            ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%2010.png)
+            ![Untitled](MAC_GLFW/Untitled%2010.png)
             
         4. 컴파일 소스목록에 glad.c 추가
             
-            ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%2011.png)
+            ![Untitled](MAC_GLFW/Untitled%2011.png)
             
         5. 헤더파일 사용을 위해 search paths 경로에 추가
         
-        ![Untitled](OpenGL%20480f7d845cd84c79ae52950f549736b8/Untitled%2012.png)
+        ![Untitled](MAC_GLFW/Untitled%2012.png)
         
 
 # 코드
 
----
+
 
 ```cpp
 #include <glad/glad.h>       // OpenGL 함수 포인터를 로드하기 위한 헤더
@@ -340,9 +348,3 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
 }
 
 ```
-
-# 실행화면
-
----
-
-![2024-05-192.32.49-ezgif.com-video-to-gif-converter.gif](OpenGL%20480f7d845cd84c79ae52950f549736b8/2024-05-192.32.49-ezgif.com-video-to-gif-converter.gif)
