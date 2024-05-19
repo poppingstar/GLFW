@@ -175,7 +175,7 @@ C/C++>일반>추가 포함 디렉터리에 $(ProjectDir)\dependencies\include를
 
 
 설정이 끝났습니다. 코드를 실행했을 때, 아래와 같이 돌아가는 직육면체가 나오면 성공입니다.<br/>
-![end](https://github.com/poppingstar/GLFW/assets/71365717/448648ab-9f32-4da9-9290-17aa4ddc305f)<br/>
 
+![end](https://github.com/jhon-rjf/GLFW/assets/71365717/55eb81fe-242c-4cf7-b1b4-2a549d0b71a2)
 
 
